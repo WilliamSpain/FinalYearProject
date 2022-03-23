@@ -1,0 +1,17 @@
+{
+  "type": "application",
+  "name": "FinalYearProject",
+  "category": null,
+  "server": "server.js",
+  "icon": "icon.png",
+  "title": {
+    "en_EN": "FinalYearProject"
+  },
+  "description": {
+    "en_EN": "FinalYearProject"
+  },
+  "files": [
+    "main.js",
+    "main.css"
+  ]
+}

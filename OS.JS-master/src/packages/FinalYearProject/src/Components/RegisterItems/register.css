@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.registerProperties{
+    padding-left: 5px;
+}
+.flag-names, .flag-values{
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+}
+.flag-values{
+    border-top:1px solid #8d8d8d;
+
+}
+.register-box{
+    background-color: white;
+    height: 90%;
+    width: 10%;
+    border:3px gainsboro outset;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.flag-box{
+    background-color: white;
+    height: auto;
+    width: 15%;
+    border:3px gainsboro outset;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.flag-containers{
+    text-align: center;
+    width: 100%;
+    border:1px solid gainsboro;
+}
+span{
+    overflow: hidden;
+}
+.register-title, .flag-title{
+    text-align: center;
+    font-weight: bold;
+    padding-left: 2px;
+    border-bottom:1px solid #8d8d8d;
+}
+.register-dec{
+    border-bottom:1px solid #8d8d8d;
+    padding-left: 2px;
+}
+.register-hex{
+    border-bottom:1px solid #8d8d8d;
+    padding-left: 2px;
+}
+.register-byte{
+    padding-left: 2px;
+}
+.flag-carry,.flag-zero,.flag-fault,.flag-ip,.flag-sp{
+    font-weight: bold;
+}

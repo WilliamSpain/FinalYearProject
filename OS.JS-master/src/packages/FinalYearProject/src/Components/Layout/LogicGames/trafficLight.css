@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.traffic-svg{
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans";
+}
+.traffic-container{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.top-pane{
+    height: 65%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+}
+.bottom-pane{
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.app-control{
+
+    width: 40%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+
+}
+.app-control button,select{
+    border: solid;
+    border-width: thin;
+    width: 100%;
+    margin-right: 10px;
+    padding: 1px;
+    font-size: 15px;
+    font-family: "Open Sans";
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.instruction-help{
+
+
+}
+.load-game{
+    background-color: gainsboro !important ;
+}
+.game-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: inherit;
+}
+.memory-help{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: inherit;
+    width: inherit;
+}
+select:hover:enabled {
+    filter: brightness(70%);
+}
+select:active:hover {
+    transform: translateY(1px);
+}
+.editor-control{
+    width: 60%;
+    height: 100%;
+    white-space:nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.editor-control button{
+    margin-top: 0.5rem;
+    margin-left: 10px;
+    width: 150px;
+    padding: 8px;
+    border-radius: 6px;
+    border-width: 1px;
+    transition-duration: 0.1s;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+button:hover:enabled {
+filter: brightness(70%);
+}
+button:active:hover {
+    transform: translateY(1px);
+}
+button:disabled {
+    opacity: 0.6;
+}
+.btn-assemble{
+    background-color: white;
+}
+.btn-run{
+    background-color: #03bf00;
+    color: white;
+}
+.btn-stop{
+    background-color: red;
+    color: white;
+}
+.btn-step{
+    background-color: white;
+}
+.btn-Reset{
+    background-color: white;
+}
+svg{
+    height: 100%;
+    width: 200px;
+    margin-left: 10%;
+    margin-right: 0;
+}

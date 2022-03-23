@@ -1,0 +1,36 @@
+.textContainer{
+    z-index: -1;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border: none;
+}
+.textField{
+    height: 100%;
+    width: 100%;
+    border: groove;
+}
+
+textarea{
+    white-space: pre-wrap;
+    width: 95.34%;
+    height: 100%;
+    background: url(http://i.imgur.com/2cOaJ.png);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    padding-top: 10px;
+    border-color:#ccc;
+
+}
+.textField{
+    height: 80%;
+    width: 100%;
+}
+.ace-editor {
+    /*max-height: 300px;
+    min-height: 150px;*/
+    resize: both;
+}

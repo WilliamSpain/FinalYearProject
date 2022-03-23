@@ -1,0 +1,17 @@
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.navbar-region{
+    height: 25%;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: #e8e8e8;
+    background-image: linear-gradient(deepskyblue, white);
+}
+.text-region{
+    height: 100%
+}

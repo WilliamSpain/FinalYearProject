@@ -1,0 +1,9 @@
+.Window_FinalYearProjectWindow {
+  /* Your styles here */
+}
+.osjs-window {
+  &[data-focused=false] {
+    /* can't remember at the moment if you need to have "1 !important" here */
+    opacity: 1;
+  }
+}

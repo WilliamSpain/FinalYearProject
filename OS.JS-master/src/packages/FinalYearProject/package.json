@@ -1,0 +1,48 @@
+{
+  "name": "FinalYearProject",
+  "scripts": {
+    "test": "npm run eslint && npm run stylelint",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "eslint": "eslint index.js server.js",
+    "stylelint": "stylelint index.scss",
+    "prepublishOnly": "npm run test && rm ./dist/* && npm run build"
+  },
+  "dependencies": {
+    "jsx": "^0.9.89",
+    "preset-react": "^1.0.0",
+    "react-dropdown": "^1.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-react-jsx": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@osjs/dev-meta": "^2.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "extends": "@osjs/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@osjs/stylelint-config"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "osjs": {
+    "type": "package"
+  }
+}

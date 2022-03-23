@@ -1,0 +1,363 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+.Window_FinalYearProjectWindow {
+  /* Your styles here */
+}
+
+.osjs-window[data-focused=false] {
+  /* can't remember at the moment if you need to have "1 !important" here */
+  opacity: 1;
+}
+.top-pane {
+  /*background-color: linear deepskyblue;*/
+  /*background-image: radial-gradient(deepskyblue, white);*/
+  height: 65%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.bottom-pane {
+  /*background-color: deepskyblue;*/
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-control {
+  width: 40%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.app-control button, select {
+  border: solid;
+  border-width: thin;
+  width: 100%;
+  margin-right: 10px;
+  padding: 1px;
+  font-size: 15px;
+  font-family: "Open Sans";
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.load-game {
+  background-color: gainsboro !important;
+}
+
+.game-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: inherit;
+}
+
+.memory-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: inherit;
+  width: inherit;
+}
+
+select:hover:enabled {
+  filter: brightness(70%);
+}
+
+select:active:hover {
+  transform: translateY(1px);
+}
+
+.editor-control {
+  width: 60%;
+  height: 100%;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.editor-control button {
+  margin-top: 0.5rem;
+  margin-left: 10px;
+  width: 150px;
+  padding: 8px;
+  border-radius: 6px;
+  border-width: 1px;
+  transition-duration: 0.1s;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover:enabled {
+  filter: brightness(70%);
+}
+
+button:active:hover {
+  /*background-color: #3e8e41;
+  box-shadow: 0 5px #666;*/
+  transform: translateY(1px);
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.btn-assemble {
+  background-color: white;
+}
+
+.btn-run {
+  background-color: #03bf00;
+  color: white;
+}
+
+.btn-stop {
+  background-color: red;
+  color: white;
+}
+
+/*.btn-stop:disabled{
+    background-color: rgba(255,0,0,0.2);
+}*/
+.btn-step {
+  background-color: white;
+}
+
+.btn-Reset {
+  background-color: white;
+}
+
+svg {
+  height: 100%;
+  width: 200px;
+  margin-left: 10%;
+  margin-right: 0;
+}
+/*.register{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-left: 5px;
+}*/
+.registerProperties {
+  padding-left: 5px;
+}
+
+.flag-names, .flag-values {
+  display: flex;
+  flex-direction: row;
+  justify-content: inherit;
+}
+
+.flag-values {
+  border-top: 1px solid #8d8d8d;
+}
+
+.register-box {
+  background-color: white;
+  height: 90%;
+  width: 10%;
+  border: 3px gainsboro outset;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.flag-box {
+  background-color: white;
+  height: auto;
+  width: 15%;
+  border: 3px gainsboro outset;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.flag-containers {
+  text-align: center;
+  width: 100%;
+  border: 1px solid gainsboro;
+}
+
+span {
+  overflow: hidden;
+}
+
+.register-title, .flag-title {
+  text-align: center;
+  font-weight: bold;
+  padding-left: 2px;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.register-dec {
+  border-bottom: 1px solid #8d8d8d;
+  padding-left: 2px;
+}
+
+.register-hex {
+  border-bottom: 1px solid #8d8d8d;
+  padding-left: 2px;
+}
+
+.register-byte {
+  padding-left: 2px;
+}
+
+.flag-carry, .flag-zero, .flag-fault, .flag-ip, .flag-sp {
+  font-weight: bold;
+}
+.memoryContainer {
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+  border: thin;
+}
+.hexTable {
+  width: 100%;
+  height: 90%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.hexCell {
+  width: 1.7%;
+  height: 1.7%;
+  border: solid;
+  border-width: thin;
+  border-color: gainsboro;
+}
+
+.hexCellOuter {
+  background-color: gainsboro;
+  color: white;
+  border: groove;
+  width: 1.7%;
+  height: 1.7%;
+}
+
+.hex-dec-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 5%;
+}
+
+.hex-dec-button button {
+  height: 100%;
+  border-radius: 2px;
+  background-color: white;
+  border: 1px solid #808080;
+}
+.memoryTable {
+  width: 100%;
+  height: 100%;
+}
+.traffic-svg {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans";
+}
+
+.traffic-container {
+  height: 100%;
+  width: 100%;
+}
+.textContainer {
+  z-index: -1;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border: none;
+}
+
+.textField {
+  height: 100%;
+  width: 100%;
+  border: groove;
+}
+
+textarea {
+  white-space: pre-wrap;
+  width: 95.34%;
+  height: 100%;
+  background: url(http://i.imgur.com/2cOaJ.png);
+  background-attachment: local;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+  padding-top: 10px;
+  border-color: #ccc;
+}
+
+.textField {
+  height: 80%;
+  width: 100%;
+}
+
+.ace-editor {
+  /*max-height: 300px;
+  min-height: 150px;*/
+  resize: both;
+}
+/*
+!*display: flex;
+//flex-direction: column;*!
+.contentD{
+
+    height: 100%;
+    width:100%
+}
+
+.text-region{
+    height: 100%
+}*/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar-region {
+  height: 25%;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #e8e8e8;
+  background-image: linear-gradient(deepskyblue, white);
+}
+
+.text-region {
+  height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map*/
