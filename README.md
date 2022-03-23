@@ -23,7 +23,7 @@
 # Headings
 ### 1. UI
 ### 2. Hello World
-### 2. Logic Game
+### 3. Logic Game
 
 
 # 1. UI
