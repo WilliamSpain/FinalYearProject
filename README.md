@@ -3,11 +3,19 @@
 
 
 ## Installation with npm 
+### method 1 with zip
 1. Copy the OS.JS folder into desired location
-2. navigate directory with OS.JS folder i.e. "../OS.JS" and run "npm run install" command
+2. navigate directory with OS.JS folder i.e. "../OS.JS" and run "npm install" command
 3. then run "npm run package:discover" command
 4. then run "npm run build" command 
 
+
+### method 2 with GitHub
+1. run "git clone https://github.com/WilliamSpain/FinalYearProject.git"
+2. navigate into the download folder then into OS.JS i.e. "../OS.JS"
+3. run "npm install" command
+4. then run "npm run package:discover" command
+5. then run "npm run build" command 
 
 ## Running instance with npm
 - once the installation steps are complete run "npm run serve" to create a local instance on port :8000
@@ -47,7 +55,7 @@
 - Instructions: Shows available instructions with corresponding opcode in Decimal and Hex
 - Choose Game + Load Game: lets you select a logic game, "load game" launches window
 
-# Hello World
+# 2. Hello World
 Here is a program that loads hello World as ascii into the last 24 bytes of the memory array, When the code is finished executing the program should log the word to browser console.
 ```
 	JMP start
@@ -84,7 +92,7 @@ Lets walk through
 7. compare BL and CL are we at the last character 0 if so break else loop
 8. Repeat until we reach the 0 at the end of hello: and then halt  
 
-# Logic Game
+# 3. Logic Game
 
 - The logic Game simply works off of the byte representation of the AL register
 - the bottom bit in the window is the LSB of the AL register
