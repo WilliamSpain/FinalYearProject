@@ -2,6 +2,10 @@
 
 
 
+### *Images showing usage in "ExampleImagesUsingStep.md"*
+
+
+
 ## Installation with npm 
 ### method 1 with zip
 1. Copy the OS.JS folder into desired location
